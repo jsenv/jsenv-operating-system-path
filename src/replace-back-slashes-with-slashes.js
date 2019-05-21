@@ -1,1 +1,1 @@
-export const replaceBackSlashesWithSlashes = (string) => string.replace(/\\/g, "\\")
+export const replaceBackSlashesWithSlashes = (string) => string.replace(/\\/g, "/")
