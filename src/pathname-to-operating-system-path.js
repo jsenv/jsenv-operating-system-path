@@ -2,7 +2,7 @@ import { startsWithWindowsDriveLetter } from "./starts-with-windows-drive-letter
 import { replaceSlashesWithBackSlashes } from "./replace-slashes-with-backslashes.js"
 
 export const pathnameToOperatingSystemPath = (pathname) => {
-  if (pathname[0] !== "/") throw new Error(`pathname must start with /`)
+  if (pathname[0] !== "/") throw new Error(`pathname must start with /, got ${pathname}`)
 
   const pathnameWithoutLeadingSlash = pathname.slice(1)
   if (
