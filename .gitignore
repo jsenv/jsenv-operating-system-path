@@ -1,4 +1,5 @@
 /.dist/
+/.vscode/settings.json
 /dist/
 /coverage/
 /node_modules/
