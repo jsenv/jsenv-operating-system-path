@@ -1,6 +1,7 @@
 {
   "name": "@jsenv/operating-system-path",
-  "version": "2.5.0",
+  "description": "file path abstraction around unix and windows",
+  "version": "2.5.1",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -33,7 +34,7 @@
     "postpublish": "node ./script/transform-package/restore-postinstall.js"
   },
   "dependencies": {
-    "@jsenv/href": "1.0.0"
+    "@jsenv/href": "1.0.1"
   },
   "devDependencies": {
     "@jsenv/bundling": "6.3.0",
