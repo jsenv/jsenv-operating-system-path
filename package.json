@@ -1,11 +1,14 @@
 {
   "name": "@jsenv/operating-system-path",
   "description": "file path abstraction around unix and windows",
-  "version": "2.5.1",
+  "version": "2.6.0",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/jsenv/jsenv-operating-system-path"
+  },
+  "engines": {
+    "node": ">=12.0.0"
   },
   "publishConfig": {
     "access": "public",
@@ -33,23 +36,22 @@
     "prepublishOnly": "node ./script/transform-package/remove-postinstall.js && npm run dist",
     "postpublish": "node ./script/transform-package/restore-postinstall.js"
   },
-  "dependencies": {
-    "@jsenv/href": "1.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@jsenv/bundling": "6.3.0",
-    "@jsenv/codecov-upload": "1.9.0",
-    "@jsenv/execution": "6.1.0",
-    "@jsenv/node-launcher": "4.19.0",
-    "@jsenv/node-module-import-map": "7.1.0",
+    "@jsenv/auto-publish": "1.9.0",
+    "@jsenv/bundling": "7.6.2",
+    "@jsenv/codecov-upload": "2.0.0",
+    "@jsenv/execution": "6.11.0",
+    "@jsenv/node-launcher": "4.26.0",
+    "@jsenv/node-module-import-map": "8.2.1",
     "@jsenv/eslint-config": "10.1.0",
     "@jsenv/prettier-config": "1.0.1",
     "@jsenv/prettier-check-project": "3.5.0",
-    "@jsenv/testing": "3.6.0",
+    "@jsenv/testing": "3.9.0",
     "@dmail/assert": "3.14.0",
     "babel-eslint": "11.0.0-beta.0",
     "prettier": "1.18.2",
-    "eslint": "6.5.0",
+    "eslint": "6.5.1",
     "rimraf": "3.0.0"
   }
 }
