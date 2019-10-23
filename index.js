@@ -1,4 +1,3 @@
-export { importMetaURLToFolderPath } from "./src/import-meta-url-to-folder-path.js"
 export { isWindowsPath } from "./src/is-windows-path.js"
 export { operatingSystemPathToPathname } from "./src/operating-system-path-to-pathname.js"
 export { pathnameIsInside } from "./src/pathname-is-inside.js"

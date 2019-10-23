@@ -1,7 +1,7 @@
 {
   "name": "@jsenv/operating-system-path",
   "description": "file path abstraction around unix and windows",
-  "version": "2.7.0",
+  "version": "3.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
