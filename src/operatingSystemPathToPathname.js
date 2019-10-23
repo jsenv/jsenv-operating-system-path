@@ -7,7 +7,11 @@ export const operatingSystemPathToPathname = (operatingSystemPath) => {
   }
 
   if (operatingSystemPath.startsWith("file://")) {
-    return operatingSystemPath.slice("file://".length)
+    const pathname = operatingSystemPath.slice("file://".length)
+    if (pathname.endsWith("/")) {
+      return pathname.slice(0, -1)
+    }
+    return pathname
   }
 
   if (isWindowsPath(operatingSystemPath)) {
@@ -15,5 +19,8 @@ export const operatingSystemPathToPathname = (operatingSystemPath) => {
   }
 
   // linux and mac operatingSystemFilename === pathname
+  if (operatingSystemPath.endsWith("/")) {
+    return operatingSystemPath.slice(0, -1)
+  }
   return operatingSystemPath
 }
